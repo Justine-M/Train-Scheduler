@@ -85,13 +85,11 @@ dataRef.ref().on("child_added", function(childSnapshot) {
         // Assumptions
         // var tFrequency = frequency;
 
-        // Time is 3:30 AM
+        
         var firstTrainArr = firstTrainTime.split(":");
         var trainTime = moment().hours(firstTrainArr[0]).minutes(firstTrainArr[1]);
     
-        // First Time (pushed back 1 year to make sure it comes before current time)
-        // var firstTimeConverted = moment(firstTrain, "HH:mm").subtract(1, "years");
-        // console.log(firstTimeConverted);
+        
     
         // Current Time
         var currentTime = moment();
